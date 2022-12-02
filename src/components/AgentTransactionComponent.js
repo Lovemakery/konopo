@@ -210,7 +210,6 @@ export default class AgentTransactions extends Component {
                                 </tr>
                             </tbody>
                         </table>
-
                  </div>
 
             </div>

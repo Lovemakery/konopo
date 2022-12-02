@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 import "./App.css";
 
+
 import AuthService from "./services/auth.service";
 
 import Login from "./components/login.component";
@@ -75,8 +76,10 @@ class App extends Component {
     const { currentUser, showModeratorBoard, showAdminBoard, showAgentBoard, } = this.state;
 
     return (
+      
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <header id="page-topbar">
+        <nav className="navbar navbar-header navbar-expand navbar-dark bg-dark">
           <Link to={"/"} className="navbar-brand">
            Konopo
           </Link>
@@ -151,6 +154,7 @@ class App extends Component {
             </div>
           )}
         </nav>
+        </header>
 
         <div className="container mt-3">
           <Routes>

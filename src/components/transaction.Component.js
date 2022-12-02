@@ -91,11 +91,11 @@ export default class TransactionsComp extends Component {
 
     return (
       <div className="list row">
-        <div className="col-md-6">
+        <div className="col-md-4">
         <h4>What do you want to do?</h4>
 
         <ul className="list-group">
-              <Link to="/admin">
+              <Link to="/agent">
               <li
                 className="list-group-item " 
               >
@@ -120,7 +120,7 @@ export default class TransactionsComp extends Component {
               
         </ul>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-8">
         <div className="col-md-8">
           <div className="input-group mb-3">
             <input
@@ -147,8 +147,14 @@ export default class TransactionsComp extends Component {
              <table className = "table table-striped table-bordered">
                  <thead>
                      <tr>
-                         <th>Phone Number</th>
+                          
+                         <th>Agent code</th>
+                         <th>Customer</th>
+                         <th>Transaction Type</th>
+                         <th>Status</th>
                          <th>Pin Code</th>
+                         <th>Amount</th>
+                         <th>Fees</th>
                          <th> Actions</th>
                       </tr>
                  </thead>
@@ -158,11 +164,27 @@ export default class TransactionsComp extends Component {
                     transactions.map( transaction=> (
                     <tr key= {transaction.id}>
                         <td>
-                             {transaction.msisdn}
+                             {transaction.creditParty.msisdn}
+                        </td> 
+                        <td>
+                             {transaction.debitParty.msisdn}
+                        </td> 
+                        
+                        <td>
+                             {transaction.type}
+                        </td> 
+                        <td>
+                             
                         </td> 
                         <td>
                              {transaction.oneTimeCode}
                         </td>
+                        <td>
+                             {transaction.amount}
+                        </td> 
+                        <td>
+                            
+                        </td> 
                         <td>
                         <button className="btn btn-info">Print </button>
                         </td>

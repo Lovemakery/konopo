@@ -102,7 +102,7 @@ export default class BoardAdmin extends Component {
 
     return (
       <div className="list row">
-        <div className="col-md-6">
+        <div className="col-md-4">
         <h4>What do you want to do?</h4>
 
         <ul className="list-group">
@@ -138,7 +138,7 @@ export default class BoardAdmin extends Component {
               
         </ul>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-8">
         <div className="col-md-8">
           <div className="input-group mb-3">
             <input

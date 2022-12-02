@@ -107,11 +107,11 @@ export default class BoardAgent  extends Component {
     return (
       <div className="list row">
      
-      <div className="col-md-6">
+      <div className="col-md-4">
         <h4>What do you want to do?</h4>
 
         <ul className="list-group">
-              <Link to="/user">
+              <Link to="/agent">
               <li
                 className="list-group-item " 
               >
@@ -136,7 +136,7 @@ export default class BoardAgent  extends Component {
               
         </ul>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-4">
         <div className="card card-container">
 
           <Form
